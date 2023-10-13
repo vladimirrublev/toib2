@@ -69,7 +69,6 @@ uid=1004(user_vladimir) gid=1004(user_vladimir) группы=1004(user_vladimir)
 
 ![image](https://github.com/vladimirrublev/toib2/blob/main/5%20часть.PNG)
 
-![image](https://github.com/vladimirrublev/toib2/blob/main/6%20часть.PNG)
 
 7 Шаг
 
@@ -79,7 +78,7 @@ root@debian:/home/volodyarvs# chmod 770 /home/super-{Rublev.V.S}
 
 root@debian:/home/volodyarvs# chown super-{Rublev.V.S}:group-{rublev} /home/super-{Rublev.V.S}
 
-![image](https://github.com/vladimirrublev/toib2/blob/main/7.png)
+![image](https://github.com/vladimirrublev/toib2/blob/main/6%20часть.PNG)
 
 8 Шаг
 
@@ -89,7 +88,7 @@ user_volodyarvs@debian:/home/volodyarvs$ touch /home/super-{Rublev.V.S}/test_fil
 
 user_volodyarvs@debian:/home/volodyarvs$ rm /home/super-{Rublev.V.S}/test_file.txt
 
-![image](https://github.com/vladimirrublev/toib2/blob/main/8.png)
+![image](https://github.com/vladimirrublev/toib2/blob/main/7.png)
 
 user_volodyarvsr@debian:/home/volodyarvs$ cd /home/super-{Rublev.V.S}
 
@@ -98,3 +97,5 @@ user_volodyarvs@debian:/home/super-{[Rublev.V.S](https://media.discordapp.net/at
 user_volodyarvs@debian:/home/super-{Rublev.V.S}$ ls
 
 test_file.txt
+
+![image](https://github.com/vladimirrublev/toib2/blob/main/8.png)
