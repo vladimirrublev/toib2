@@ -98,5 +98,3 @@ user_volodyarvs@debian:/home/super-{[Rublev.V.S](https://media.discordapp.net/at
 user_volodyarvs@debian:/home/super-{Rublev.V.S}$ ls
 
 test_file.txt
-
-![image]([https://github.com/asatryan173/TOIB2/assets/71139053/07967d72-5356-4b87-9888-45af2fc6c89c](https://github.com/vladimirrublev/toib2/blob/main/8.png)https://github.com/vladimirrublev/toib2/blob/main/8.png)
