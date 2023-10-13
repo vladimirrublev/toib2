@@ -13,17 +13,17 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-ne
 каталоге пользователя super-{ФИО}
 8. Продемонстрировать работу механизмов разграничения доступа.
 # Шаги выполнения 
-1 Шаг ![image](https://github.com/asatryan173/TOIB2/assets/71139053/bbd358ee-d20d-484d-943b-314fdf69ef94)
+1 Шаг ![image](https://github.com/vladimirrublev/toib2/blob/main/1%20часть.PNG)
 
 2 Шаг
 
-david@debian:~$ su
+volodyarvs@debian:~$ su
 
 Пароль: 
 
-root@debian:/home/david# sudo useradd super-{AsatryanDR}
+root@debian:/home/volodyarvs# sudo useradd super-{Rublev.V.S}
 
-root@debian:/home/david# passwd super-{AsatryanDR}
+root@debian:/home/volodyarvs# passwd super-{Rublev.V.S}
 
 Новый пароль:
 
@@ -31,41 +31,41 @@ root@debian:/home/david# passwd super-{AsatryanDR}
 
 passwd: пароль успешно обновлён
 
-root@debian:/home/david# sudo usermod -aG sudo super-{AsatryanDR}
+root@debian:/home/volodyarvs# sudo usermod -aG sudo super-{Rublev.V.S}
 
-![image](https://github.com/asatryan173/TOIB2/assets/71139053/2492927f-9e97-4ccf-a9b9-e068ee2a28f2)
+![image](https://github.com/vladimirrublev/toib2/blob/main/1%20часть.PNG)
 
 3 Шаг
 
-root@debian:/home/david# sudo groupadd group-{1234}
+root@debian:/home/volodyarvs# sudo groupadd group-{rublev}
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/37f49d43-85ef-41a6-a502-7c5357a5ad3a)
 
 4 Шаг
 
-root@debian:/home/david# sudo usermod -aG group-{1234} super-{AsatryanDR}
+root@debian:/home/volodyarvs# sudo usermod -aG group-{rublev} super-{Rublev.V.S}
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/43c5b913-d064-457a-8f4c-475a8c5b1198)
 
 5 Шаг
 
-root@debian:/home/david# id super-{AsatryanDR}
+root@debian:/home/volodyarvs# id super-{Rublev.V.S}
 
-uid=1002(super-{AsatryanDR}) gid=1002(super-{AsatryanDR}) группы=1002(super-{AsatryanDR
-}),27(sudo), 1003(group-{1234})
+uid=1002(super-{Rublev.V.S}) gid=1002(super-{Rublev.V.S}) группы=1002(super-{Rublev.V.S
+}),27(sudo), 1003(group-{rublev})
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/b0798775-00cf-48c2-a40e-d6ca12163a2d)
 
 6 Шаг
 
-root@debian:/home/david# sudo adduser user_david
+root@debian:/home/volodyarvs# sudo adduser user_vladimir
 
-root@debian:/home/david# sudo usermod -aG group-{1234} user_david
+root@debian:/home/volodyarvs# sudo usermod -aG group-{rublev} user_vladimir
 
-root@debian:/home/david# id user_david
+root@debian:/home/volodyarvs# id user_vladimir
 
-uid=1004(user_david) gid=1004(user_david) группы=1004(user_david),100(users),1003(group
--{1234})
+uid=1004(user_vladimir) gid=1004(user_vladimir) группы=1004(user_vladimir),100(users),1003(group
+-{Rublev.V.S})
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/b109c18c-a714-4baa-83c2-3978ee915c0f)
 
@@ -73,29 +73,29 @@ uid=1004(user_david) gid=1004(user_david) группы=1004(user_david),100(user
 
 7 Шаг
 
-root@debian:/home/david# sudo mkdir /home/super-{AsatryanDR}
+root@debian:/home/volodyarvs# sudo mkdir /home/super-{Rublev.V.S}
 
-root@debian:/home/david# chmod 770 /home/super-{AsatryanDR}
+root@debian:/home/volodyarvs# chmod 770 /home/super-{Rublev.V.S}
 
-root@debian:/home/david# chown super-{AsatryanDR}:group-{1234} /home/super-{AsatryanDR}
+root@debian:/home/volodyarvs# chown super-{Rublev.V.S}:group-{rublev} /home/super-{Rublev.V.S}
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/fc3ba5de-fdc7-46db-984d-56372d906fa3)
 
 8 Шаг
 
-root@debian:/home/david# su user_david
+root@debian:/home/volodyarvs# su user_volodyarvs
 
-user_david@debian:/home/david$ touch /home/super-{AsatryanDR}/test_file.txt
+user_volodyarvs@debian:/home/volodyarvs$ touch /home/super-{Rublev.V.S}/test_file.txt
 
-user_david@debian:/home/david$ rm /home/super-{AsatryanDR}/test_file.txt
+user_volodyarvs@debian:/home/volodyarvs$ rm /home/super-{Rublev.V.S}/test_file.txt
 
 ![image](https://github.com/asatryan173/TOIB2/assets/71139053/4c75eb4d-e436-4dea-b394-a24a5614d17a)
 
-user_david@debian:/home/david$ cd /home/super-{AsatryanDR}
+user_volodyarvsr@debian:/home/volodyarvs$ cd /home/super-{Rublev.V.S}
 
-user_david@debian:/home/super-{AsatryanDR}$ touch test_file.txt
+user_volodyarvs@debian:/home/super-{[Rublev.V.S](https://media.discordapp.net/attachments/1162377161605386250/1162380594433511504/image.png?ex=653bba49&is=65294549&hm=e5ff9cb3a64f1c124f80852ab32ad4bf7852d42b05972cfec8f55e1b1a2b0dce&=)}$ touch test_file.txt
 
-user_david@debian:/home/super-{AsatryanDR}$ ls
+user_volodyarvs@debian:/home/super-{Rublev.V.S}$ ls
 
 test_file.txt
 
